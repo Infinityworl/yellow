@@ -31,7 +31,8 @@ async def start(client, message):
         wish = get_wish()
         btn = [[
             InlineKeyboardButton('⚡️ ᴜᴘᴅᴀᴛᴇs ᴄʜᴀɴɴᴇʟ ⚡️', url=UPDATES_LINK),
-            InlineKeyboardButton('💡 Support Group 💡', url=SUPPORT_LINK)
+            InlineKeyboardButton('💡 Support Group 💡', url=SUPPORT_LINK),
+            Inlinekeyboardbutton('⭕ Tv Series Group ⭕', url=f'https://t.me/sinhalafilx')
         ]]
         await message.reply(text=f"<b>ʜᴇʏ {message.from_user.mention}, <i>{wish}</i>\nʜᴏᴡ ᴄᴀɴ ɪ ʜᴇʟᴘ ʏᴏᴜ??</b>", reply_markup=InlineKeyboardMarkup(btn))
         return 
